@@ -1,0 +1,12 @@
+---
+description: Testing Asynq and Redis
+globs: 
+alwaysApply: false
+---
+For testing Asynq we don't need to Mock it.
+We have redistestcontainers setup so should be able to test it w/o mocking.
+
+Redis testcontainers for Asynq testing are already implemented.
+Check internal/testutils/redis.go
+
+Example usage: internal/api/webhooks_test.go

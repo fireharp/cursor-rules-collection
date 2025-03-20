@@ -1,0 +1,18 @@
+---
+description: `task check` and `task lint`
+globs: **/*.go
+alwaysApply: false
+---
+When working with `task check` and `task lint`, especially in test files, handle linter issues appropriately:
+
+- ✅ **Use no-lint tags** when linter warnings are not relevant to test logic.
+- ✅ **Fix issues** where possible to maintain clean and maintainable code.
+- ❌ **Don't ignore critical warnings** that could impact test correctness.
+
+Example (Applying No-Lint Tags in Go):
+```go
+//nolint:errcheck // This is fine in tests where error handling is not critical
+someFunctionThatReturnsError()
+```
+
+Ensure that any suppressed linter rules are justified and do not compromise test reliability.

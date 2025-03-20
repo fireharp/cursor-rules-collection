@@ -1,0 +1,32 @@
+---
+description: Avoid Naming Conflicts: Use Import Aliases in Go
+globs: 
+alwaysApply: false
+---
+❌ Don’t let local variables shadow imported packages. If you name a variable the same as an imported package, you’ll override the package reference, causing errors.
+
+✅ Do use import aliases to prevent conflicts. Explicitly differentiate packages from variables to keep your code clear and bug-free.
+
+Bad Example (Variable Shadows Package – Causes Errors):
+
+import (
+    "path"
+)
+
+func main() {
+    path := "example/directory" // ❌ Shadows the imported package
+    fmt.Println(path.Join("base", path)) // 🚨 Error: path.Join undefined
+}
+
+Good Example (Using an Import Alias – Works Correctly):
+
+import (
+    pathpkg "path" // ✅ Use an alias to avoid conflicts
+)
+
+func main() {
+    path := "example/directory"
+    fmt.Println(pathpkg.Join("base", path)) // ✅ Works fine
+}
+
+🔹 Always use import aliases when a package name might conflict with a variable. This keeps your code readable and prevents unexpected errors.

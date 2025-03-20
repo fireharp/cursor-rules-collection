@@ -1,0 +1,15 @@
+---
+description: Tesing and mocking clients and biger libraries
+globs: 
+alwaysApply: false
+---
+Where possible use mockgen for mocking.
+
+
+Examples:
+internal/testutils/mock_posthog/main.go
+internal/testutils/mock_statsd/main.go
+
+Example comand run:
+mockgen github.com/DataDog/datadog-go/statsd ClientInterface > internal/testutils/mock_statsd/main.go
+

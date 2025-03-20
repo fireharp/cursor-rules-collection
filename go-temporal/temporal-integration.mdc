@@ -1,0 +1,9 @@
+---
+description: ALL related to temporal
+globs: *.go
+alwaysApply: true
+---
+ALWAYS when it's related to temporal,
+check if we need to update our @TEMPORAL_IMPL_STATUS.md 
+
+Keep it's structure untouched. For that check it's contents before editing! 

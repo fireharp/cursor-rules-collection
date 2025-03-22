@@ -3,11 +3,11 @@ description:
 globs: 
 alwaysApply: false
 ---
-This rule provides a standardized approach to documenting, managing, and executing project tasks using a `task.md` file. It outlines best practices for listing task steps, evaluating progress, and ensuring continuity in task execution. By following these guidelines, developers can maintain clear, sequential documentation of tasks, enhancing project management efficiency and collaboration.
+This rule provides a standardized approach to documenting, managing, and executing project tasks using a `task-[identifier].md` file. It outlines best practices for listing task steps, evaluating progress, and ensuring continuity in task execution. By following these guidelines, developers can maintain clear, sequential documentation of tasks, enhancing project management efficiency and collaboration.
 
 ## File Location & Naming
 
-- Create a `task-[identifier].md` file at the root of your project.
+- Create a `task-[identifier].md`file at the `.tasks` folder in the root of your project.
 - Use descriptive identifiers for task files, such as:
   - `task-add-login-feature.md`
   - `task-fix-navigation-bug.md`
@@ -35,11 +35,11 @@ This rule provides a standardized approach to documenting, managing, and executi
   - [ ] Step 2: Write unit tests
   - [ ] Step 3: Code implementation
   ```
-- Regularly update the `task.md` file to reflect progress.
+- Regularly update the `task-[identifier].md` file to reflect progress.
 
 ## Resuming Incomplete Tasks
 
-- Before starting a new session, review the `task.md` file for any unchecked steps.
+- Before starting a new session, review the `task-[identifier].md` file for any unchecked steps.
 - Continue from the last incomplete step, ensuring all previous steps are verified as complete.
 - For team settings, ensure that task handovers are documented, and any context or dependencies are clearly noted.
 

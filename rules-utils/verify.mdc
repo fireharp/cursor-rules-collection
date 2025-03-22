@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+PLACEHOLDER
+same as ./cursor-rules/init.mdc
+
+# Example usage
+```cursor-agent
+rules
+```

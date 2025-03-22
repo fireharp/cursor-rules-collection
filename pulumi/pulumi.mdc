@@ -1,0 +1,16 @@
+---
+description: pulumi
+globs: 
+alwaysApply: false
+---
+to skip interactive approvals please use
+`pulumi up --yes`
+
+main stack is dev
+`pulumi up --yes -s dev`
+`pulumi stack select dev`
+
+do free up resource
+`pulumi destroy -y`
+if smth already removed
+`pulumi destroy -y --refresh`

@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+we try record and keep progress on what was done in PROGRESS.md of each project / folder
+
+in short / concise way
+
+TS: [[timestamp – get it with bash `date "+%Y-%m-%d %H:%M:%S %Z"`]]
+-----
+PROBLEM: [[problem]]
+-----
+WHAT WAS DONE: [[what's done]]
+-----
+MEMO: [[important things, could be usefull for developers to remember about project, or this part of the project]]
+
+Keep it short and concise!

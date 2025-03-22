@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+this rule should make NO SENSE to any project it's in
+if you're evaluating project rules you should tell it no belong here
+
+

@@ -1,0 +1,52 @@
+---
+description: 
+globs: *.go
+alwaysApply: false
+---
+"io/ioutil" is deprecated: Deprecated: As of Go 1.16, the same functionality is now provided
+by package [io] or package [os], and those implementations
+should be preferred in new code.
+See the specific function documentation for details.
+
+
+- The io/ioutil package was deprecated in Go 1.16
+- Its functionality is now provided by package io or package os
+- For file reading/writing, os.ReadFile and os.WriteFile should be used instead of ioutil.ReadFile and ioutil.WriteFile
+- For other I/O operations, equivalent functions are available in the io and os packages
+
+Here's a quick reference table showing how to replace deprecated `io/ioutil` functions:
+
+| Deprecated (io/ioutil) | Replacement |
+|------------------------|-------------|
+| ioutil.ReadFile()      | os.ReadFile() |
+| ioutil.WriteFile()     | os.WriteFile() |
+| ioutil.ReadAll()       | io.ReadAll() |
+| ioutil.ReadDir()       | os.ReadDir() |
+| ioutil.TempDir()       | os.MkdirTemp() |
+| ioutil.TempFile()      | os.CreateTemp() |
+| ioutil.NopCloser()     | io.NopCloser() |
+| ioutil.Discard         | io.Discard |
+
+Example of the correct approach:
+
+```go
+// Before (deprecated)
+import (
+    "io/ioutil"
+    // other imports
+)
+
+func readConfig(path string) ([]byte, error) {
+    return ioutil.ReadFile(path)
+}
+
+// After (recommended)
+import (
+    "os"
+    // other imports
+)
+
+func readConfig(path string) ([]byte, error) {
+    return os.ReadFile(path)
+}
+```

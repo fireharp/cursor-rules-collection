@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Let's review our conversation.
+
+Let's review our current rules.
+
+Do you think anything would make sence to add to our ruleset?
+- related to programming language usage / setup / best practice
+- related to frameworks usage / setup / best practice
+- related to what user likes / doesn't like in general
+
+It's highly likely that this conversation was related to specific problem, but sometimes in 5% of cases we may generalize onto those categorize and suggest adding some rule.
+
+If so – suggest a new rule.
+You may check existing ones in .cursor/rules and make a similar.

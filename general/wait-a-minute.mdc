@@ -1,0 +1,15 @@
+---
+description: When you need to wait for something
+globs: 
+alwaysApply: false
+---
+Sometimes we need to wait for some process to finish, logs populate, server respond, etc.
+
+That time take a moment and run shell 
+`sleep X`
+where X – seconds
+
+for example 
+`sleep 60`
+
+Then check if results are in? Make sense? Do we need to wait bit more? You get it.

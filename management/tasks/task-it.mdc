@@ -1,0 +1,90 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+This rule provides a standardized approach to documenting, managing, and executing project tasks using a `task.md` file. It outlines best practices for listing task steps, evaluating progress, and ensuring continuity in task execution. By following these guidelines, developers can maintain clear, sequential documentation of tasks, enhancing project management efficiency and collaboration.
+
+## File Location & Naming
+
+- Create a `task-[identifier].md` file at the root of your project.
+- Use descriptive identifiers for task files, such as:
+  - `task-add-login-feature.md`
+  - `task-fix-navigation-bug.md`
+  - `task-improve-api-performance.md`
+
+## Task Steps Format
+
+- List task steps in a clear, sequential manner.
+- Use markdown checklists or numbered lists to organize steps:
+  ```markdown
+  ## Task Steps
+  1. Initialize project repository
+  2. Set up development environment
+  3. Implement feature X
+  - [ ] Step 1: Design UI
+  - [ ] Step 2: Write unit tests
+  - [ ] Step 3: Code implementation
+  ```
+
+## Task Progress Evaluation
+
+- Mark completed steps using markdown checkboxes:
+  ```markdown
+  - [x] Step 1: Design UI
+  - [ ] Step 2: Write unit tests
+  - [ ] Step 3: Code implementation
+  ```
+- Regularly update the `task.md` file to reflect progress.
+
+## Resuming Incomplete Tasks
+
+- Before starting a new session, review the `task.md` file for any unchecked steps.
+- Continue from the last incomplete step, ensuring all previous steps are verified as complete.
+- For team settings, ensure that task handovers are documented, and any context or dependencies are clearly noted.
+
+## Integration with Tools
+
+- Consider integrating your task management with project management tools like Jira, Trello, or Asana for enhanced tracking and collaboration.
+- Use version control systems like Git to track changes in `task.md` files, ensuring that task progress is synchronized with code changes.
+
+## Task Execution Strategies
+
+- Prioritize tasks based on project goals and deadlines.
+- Allocate resources effectively, ensuring that team members are aware of their responsibilities.
+- Regularly review and adjust task priorities as project requirements evolve.
+
+## Examples
+
+### Example 1: Task.md Structure
+
+```markdown
+# Task: Implement Dark Mode
+
+## Task Steps
+- [ ] Step 1: Research dark mode best practices
+- [ ] Step 2: Update CSS styles
+- [ ] Step 3: Test across all browsers
+```
+
+### Example 2: Task Progress Snapshot
+
+```markdown
+# Task: Fix Header Styling
+
+## Task Steps
+- [x] Step 1: Identify styling issues
+- [x] Step 2: Update header CSS
+- [ ] Step 3: Validate changes in all viewports
+```
+
+## Best Practices
+
+- Write concise, clear instructions for each task step.
+- Maintain consistency in task documentation across projects.
+- Use human-readable identifiers and comments to enhance clarity.
+- Regularly communicate with team members to ensure alignment on task progress and priorities.
+
+## Conclusion
+
+Adhering to this task documentation format ensures effective project management by reducing ambiguity and facilitating seamless task execution. Integrating these practices with Cursor IDE supports iterative development and enhances team collaboration.

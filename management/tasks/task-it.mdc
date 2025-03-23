@@ -13,6 +13,15 @@ This rule provides a standardized approach to documenting, managing, and executi
   - `task-fix-navigation-bug.md`
   - `task-improve-api-performance.md`
 
+[[conditional step for this rule – only if user expresses willingness in git branching for this task]]
+## Git repo
+
+Let's also not forget to commit our progress to git during implementation
+If we're on main branch – create a new one and name it similar way we named `task-[identifier].md`file.
+If there're uncommitted changes – DON'T PROCEED AND ASK USER/ME BEFORE doing anything! We may want to stash / commit our changes before doing anything.
+It's fine to commit WIP to the branch as it's not production code yet.
+[[/end conditional step for this rule]]
+
 ## Task Steps Format
 
 - List task steps in a clear, sequential manner.

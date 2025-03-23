@@ -1,0 +1,18 @@
+---
+description: Git guidelines
+globs: 
+alwaysApply: false
+---
+
+git commands when use – non-interactive
+
+examples:
+```bash
+# wrong
+git branch
+
+#right
+git branch -a | cat
+git diff main sharing --name-only | cat
+
+```

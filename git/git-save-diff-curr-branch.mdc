@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+When user requests to make branch diff and output > some sharing-changes.txt≈
+
+something like that
+```sh
+git branch -a | cat
+
+git diff main [[branch_name]] --name-only | cat
+
+git diff main [[branch_name]] > [[branch_name]].txt
+
+# double check it's worked ok
+head -n 20 [[branch_name]].txt
+```

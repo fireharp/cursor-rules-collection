@@ -1,0 +1,13 @@
+---
+description: 
+globs: go.mod,package.json,pyproject.toml
+alwaysApply: false
+---
+!NEVER! update package.json, go.mod, pyproject.toml, requirements.txt dependencies manually, always use appropriate package manager: `npm`, `pnpm`, `yarn`, `go mod`, `uv`, `uv pip`, `poetry` or else depending on the project
+
+Same goes to other package based dependencies.
+
+When possible.
+
+Sometimes in rare occasions you may edit dependencies in files manually – then outline this! And explain why you had no other choice and didn't use package manager for it.
+

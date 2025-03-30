@@ -1,0 +1,10 @@
+---
+description: 
+globs: package.json
+alwaysApply: false
+---
+!NEVER! update package.json dependencies manually, always use appropriate package manager: `npm`, `pnpm`, `yarn` or else depending on the project
+
+Same goes to other package based dependencies.
+
+

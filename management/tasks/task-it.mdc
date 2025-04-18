@@ -5,6 +5,10 @@ alwaysApply: false
 ---
 This rule provides a standardized approach to documenting, managing, and executing project tasks using a `task-[identifier].md` file. It outlines best practices for listing task steps, evaluating progress, and ensuring continuity in task execution. By following these guidelines, developers can maintain clear, sequential documentation of tasks, enhancing project management efficiency and collaboration.
 
+[[if project has Git]]
+create new branch do it all there , don't forget to commit
+[[endif]]
+
 ## File Location & Naming
 
 - Create a `task-[identifier].md`file at the `.tasks` folder in the root of your project.

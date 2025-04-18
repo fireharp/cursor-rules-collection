@@ -1,0 +1,7 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+never EVER use interactive mode for commands
+before running a command think about it and do non-interactive way
